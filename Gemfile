@@ -7,18 +7,18 @@ git_source(:github) do |repo_name|
 end
 
 gem 'devise_token_auth'
-gem 'rack-cors', require: 'rack/cors'
-gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
+gem 'jbuilder', '~> 2.5'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
-gem 'jbuilder', '~> 2.5'
+gem 'rack-cors', require: 'rack/cors'
+gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 
 group :development, :test do
+  gem 'factory_girl_rails'
+  gem 'pry-byebug'
+  gem 'pry'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
-  gem 'factory_girl_rails'
-  gem 'pry'
-  gem 'pry-byebug'
 end
 
 group :development do
